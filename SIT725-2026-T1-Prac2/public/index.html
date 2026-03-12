@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Express Static Page</title>
+</head>
+<body>
+    <h1>Welcome to the Random QUote API</h1>
+    <p>Use the endpoints to get inspirational quotes.</p>
+    <button id="fetchQuoteButton">Get Quote</button>
+    <p id="quoteDisplay"></p>
+</body>
+</html>
+
+<script>
+  document.getElementById('fetchQuoteButton').addEventListener('click', () => {
+    fetch('http://localhost:3000/api/quote')
+    .then(response => response.json())
+    .then(data => {
+      document.getElementById('quoteDisplay').innerHTML = data;
+    })
+    .catch(error => {
+      console.error('Error:', error);
+    });
+  });
+</script>
