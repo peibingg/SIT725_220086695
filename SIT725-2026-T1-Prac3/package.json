@@ -1,0 +1,23 @@
+{
+  "name": "sit725-2026-t1-prac3",
+  "version": "1.0.0",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/peibingg/SIT725_220086695.git"
+  },
+  "author": "Peibing Gu",
+  "license": "ISC",
+  "description": "SIT-725 Week 3 Practical",
+  "dependencies": {
+    "express": "^5.2.1"
+  },
+  "bugs": {
+    "url": "https://github.com/peibingg/SIT725_220086695/issues"
+  },
+  "homepage": "https://github.com/peibingg/SIT725_220086695#readme"
+}
