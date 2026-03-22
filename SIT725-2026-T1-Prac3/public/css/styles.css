@@ -23,6 +23,17 @@
   height: 400px;
 }
 
+.card .card-image img {
+  height: 220px;
+  width: 100%;
+  object-fit: cover;
+}
+
+.card .card-reveal .card-text {
+  color: #212121;
+}
+
 .click-me-button {
   background-color: #EE6E73;
   margin-top: 5
+}
