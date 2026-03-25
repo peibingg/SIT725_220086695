@@ -1,0 +1,17 @@
+{
+  "name": "sit725-2026-t1-prac4",
+  "version": "1.0.0",
+  "description": "SIT725 Week 4 - Node.js + Express + MongoDB/Mongoose (student ID: 220086695)",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "seed": "node seed.js"
+  },
+  "keywords": ["express", "mongodb", "mongoose", "rest-api"],
+  "author": "220086695",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^5.2.1",
+    "mongoose": "^8.13.2"
+  }
+}
