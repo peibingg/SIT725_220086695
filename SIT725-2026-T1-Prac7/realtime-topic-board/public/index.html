@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Sprint focus — live votes</title>
+  <link rel="stylesheet" href="/styles.css" />
+</head>
+<body>
+  <header class="top">
+    <div>
+      <h1>Sprint focus board</h1>
+      <p class="lede">Vote for what the team should emphasise next. Updates sync instantly across every open tab.</p>
+    </div>
+    <div class="status" id="connStatus" aria-live="polite">Connecting…</div>
+  </header>
+
+  <section class="panel" aria-labelledby="topics-h">
+    <h2 id="topics-h">Live votes</h2>
+    <ul class="topics" id="topicList"></ul>
+    <p class="hint" id="voteHint" hidden></p>
+  </section>
+
+  <section class="grid">
+    <div class="panel">
+      <h2>Your display name</h2>
+      <form id="nameForm" class="row">
+        <label class="sr-only" for="nameInput">Name</label>
+        <input id="nameInput" type="text" maxlength="24" placeholder="e.g. Priya" autocomplete="nickname" />
+        <button type="submit">Save</button>
+      </form>
+      <p class="fine" id="nameAck"></p>
+    </div>
+    <div class="panel">
+      <h2>Engineering tips</h2>
+      <p class="tip" id="tipBox">…</p>
+    </div>
+  </section>
+
+  <section class="panel">
+    <h2>Activity</h2>
+    <ol class="feed" id="feed" reversed></ol>
+  </section>
+
+  <script src="/socket.io/socket.io.js"></script>
+  <script src="/board.js"></script>
+</body>
+</html>
